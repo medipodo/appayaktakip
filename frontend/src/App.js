@@ -600,6 +600,35 @@ const BlogPostPage = () => {
     });
   };
   
+  // Inject FAQ JSON-LD schema into <head> for Google rich snippets
+  useEffect(() => {
+    if (!post.faq || post.faq.length === 0) return;
+    
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": post.faq.map(item => ({
+        "@type": "Question",
+        "name": item.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.a
+        }
+      }))
+    };
+    
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = 'faq-schema';
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
+    
+    return () => {
+      const existing = document.getElementById('faq-schema');
+      if (existing) existing.remove();
+    };
+  }, [post]);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Image */}
