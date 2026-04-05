@@ -471,30 +471,53 @@ const BlogPostPage = () => {
     const twImage = document.querySelector('meta[name="twitter:image"]');
     if (twImage) twImage.setAttribute('content', `https://ayaktakip.com${post.image}`);
 
-    if (!post.faq || post.faq.length === 0) return;
-    
-    const schema = {
+    // Article JSON-LD schema
+    const articleSchema = {
       "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": post.faq.map(item => ({
-        "@type": "Question",
-        "name": item.q,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": item.a
-        }
-      }))
+      "@type": "Article",
+      "headline": post.title,
+      "description": post.excerpt,
+      "image": `https://ayaktakip.com${post.image}`,
+      "datePublished": post.date,
+      "publisher": {
+        "@type": "Organization",
+        "name": "AyakTakip",
+        "url": "https://ayaktakip.com"
+      },
+      "mainEntityOfPage": `https://ayaktakip.com/blog/${post.slug}`
     };
-    
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.id = 'faq-schema';
-    script.textContent = JSON.stringify(schema);
-    document.head.appendChild(script);
-    
+    const articleScript = document.createElement('script');
+    articleScript.type = 'application/ld+json';
+    articleScript.id = 'article-schema';
+    articleScript.textContent = JSON.stringify(articleSchema);
+    document.head.appendChild(articleScript);
+
+    // FAQ JSON-LD schema
+    if (post.faq && post.faq.length > 0) {
+      const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": post.faq.map(item => ({
+          "@type": "Question",
+          "name": item.q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": item.a
+          }
+        }))
+      };
+      const faqScript = document.createElement('script');
+      faqScript.type = 'application/ld+json';
+      faqScript.id = 'faq-schema';
+      faqScript.textContent = JSON.stringify(faqSchema);
+      document.head.appendChild(faqScript);
+    }
+
     return () => {
-      const existing = document.getElementById('faq-schema');
-      if (existing) existing.remove();
+      const existingArticle = document.getElementById('article-schema');
+      if (existingArticle) existingArticle.remove();
+      const existingFaq = document.getElementById('faq-schema');
+      if (existingFaq) existingFaq.remove();
     };
   }, [post]);
 
