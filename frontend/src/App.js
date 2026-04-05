@@ -748,15 +748,12 @@ const BlogPostPage = () => {
 const CTASection = () => (
   <section className="cta-section section-spacing pt-32" data-testid="cta-section">
     <div className="container-custom text-center relative z-10">
-      <p className="text-[#64748B] text-base italic bg-[#FEF3C7] rounded-lg p-4 border-l-4 border-[#F59E0B] max-w-xl mx-auto mb-8">
-        Tıbbi teşhis amacı taşımaz; kişisel takip ve kayıt desteği sunar.
-      </p>
       <h2 className="text-2xl sm:text-3xl font-bold text-[#1D3A5F] mb-6" style={{ fontFamily: "'Montserrat', sans-serif" }}>
         Sağlığınızı Takip Etmeye Bugün Başlayın!
       </h2>
       <StoreButtons className="justify-center mb-6" />
       <p className="disclaimer-text max-w-md mx-auto">
-        Bu uygulama tıbbi teşhis yerine geçmez. Sağlık uzmanınıza danışmayı unutmayın.
+        Tıbbi teşhis amacı taşımaz; kişisel takip ve kayıt desteği sunar. Sağlık uzmanınıza danışmayı unutmayın.
       </p>
     </div>
   </section>
