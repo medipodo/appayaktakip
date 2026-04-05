@@ -1,6 +1,246 @@
 // Blog Posts Data - SEO Optimized, 700-1000+ Words, Strong Internal Linking
 export const blogPosts = [
   {
+    slug: "diyabetik-ayak-icin-dogru-ayakkabi-secimi",
+    title: "Diyabetik Ayak İçin Doğru Ayakkabı Seçimi: Nelere Dikkat Edilmeli?",
+    excerpt: "Yanlış ayakkabı, diyabet hastalarında ciddi ayak sorunlarına yol açabilir. Doğru ayakkabıyı nasıl seçeceğinizi anlatıyoruz.",
+    image: "/images/blog/diyabetik-ayakkabi-secimi.webp",
+    imageAlt: "Diyabet hastaları için uygun ayakkabı seçimi ve kan şekeri ölçüm cihazı",
+    date: "5 Nisan 2026",
+    readTime: "10 dk",
+    content: `Diyabet hastası bir yakınım var, yıllardır ayak bakımına dikkat eder ama bir gün dar bir ayakkabı yüzünden başparmağında yara oluştu. Fark etmesi bile günler sürdü — çünkü hissedememişti. Sonradan öğrendik ki diyabette ayakkabı seçimi, çoğu insanın düşündüğünden çok daha kritik bir konu.
+
+Bu yazıda diyabet hastalarının ayakkabı seçerken bilmesi gerekenleri, hangi modellerin uygun olduğunu ve nelere dikkat edilmesi gerektiğini paylaşıyorum.
+
+## Neden Ayakkabı Seçimi Bu Kadar Önemli?
+
+Diyabette uzun süre yüksek seyreden kan şekeri, ayaklardaki sinirlere ve damarlara zarar verebilir. Sinir hasarı (nöropati) geliştiğinde, ayaktaki basınç noktaları, sürtünme veya sıkışma hissedilmeyebilir. Yani dar bir ayakkabı parmağınızı eziyor olabilir ve siz bunu hiç fark etmeyebilirsiniz.
+
+Buna bir de dolaşım bozukluğu eklenince, oluşan küçük bir yara normal sürede kapanmayabilir. İşte bu yüzden diyabet hastalarında "ayağıma bir şey olmaz" diye düşünmemek gerekiyor. Diyabetik ayak kavramı ve riskleri hakkında daha kapsamlı bilgi almak isterseniz [diyabetik ayak nedir ve belirtileri](/blog/diyabetik-ayak-nedir) yazımıza göz atabilirsiniz.
+
+## Doğru Ayakkabıda Olması Gereken Özellikler
+
+Aşağıdaki özellikler diyabet hastaları için bir ayakkabıda "olmazsa olmaz" diyebileceğimiz unsurlardır:
+
+**Geniş burun bölgesi:** Parmakların rahatça hareket edebileceği, sıkışmayacağı bir alan olmalı. Sivri burunlu modeller kesinlikle tercih edilmemeli. Parmaklar üst üste binerse nasır, su toplaması ve hatta yara oluşumu riski artar. Nasırın tekrarlayan bir sorun olduğunu ve profesyonel bakım gerektirdiğini unutmayın — bu konuda [Medipodo'nun nasır tedavisi hizmeti](https://medipodo.com/hizmet/nasir-tedavisi) detaylı bilgi sunuyor.
+
+**Yumuşak ve dikişsiz iç yapı:** Ayakkabının iç yüzeyi pürüzsüz, dikişsiz veya düz dikişli olmalı. Kabartmalı dikişler sürtünmeye, sürtünme de fark edilmeyen yaralara neden olabilir.
+
+**Sağlam ama esnek taban:** Taban yeterince kalın olmalı ki keskin cisimler ayağa ulaşamasın, ama aynı zamanda yürüyüşe uyum sağlayacak kadar esnek olmalı.
+
+**Alçak topuk:** Topuk yüksekliği 2-3 cm'yi geçmemeli. Yüksek topuk, ayak ön kısmına aşırı yük biner ve basınç dağılımı bozulur.
+
+**Nefes alabilen malzeme:** Deri veya nefes alabilen tekstil tercih edin. Plastik, terletici malzemeler mantar enfeksiyonuna zemin hazırlar ve cildi olumsuz etkiler.
+
+**Ayarlanabilir kapama:** Bağcıklı veya cırt cırtlı modeller, ayakkabının ayağa tam oturmasını sağlar. Slip-on (lastikli) modeller genellikle yeterli desteği vermez.
+
+## Ayakkabı Alırken Dikkat Edilmesi Gerekenler
+
+Mağazada ayakkabı denerken şu pratik bilgiler işinize yarayacaktır:
+
+**Öğleden sonra deneyin.** Ayaklar gün içinde hafifçe şişer. Sabah denediğiniz ayakkabı akşam sıkabilir. Bu yüzden öğleden sonra saatleri ideal zamandır.
+
+**Her iki ayağınızı da ölçtürün.** Ayaklar birebir aynı boyutta olmayabilir. Her zaman büyük olan ayağa göre seçim yapın.
+
+**Çoraplarınızla deneyin.** Ayakkabıyı, günlük giydiğiniz kalınlıktaki çorapla birlikte deneyin. İnce çorapla tam olan ayakkabı, kalın çorapla sıkabilir.
+
+**İçine elinizi sokun.** Ayakkabıyı giymeden önce ve her gün giymeden önce elinizi içine sokup kontrol edin. Dikiş çıkması, taş veya yırtık astar gibi durumlar yaraya neden olabilir.
+
+**Parmak ucu mesafesini kontrol edin.** En uzun parmak ucu ile ayakkabı burnu arasında yaklaşık 1-1.5 cm boşluk olmalı.
+
+## Ortopedik Tabanlıklar ve Özel Ayakkabılar
+
+Bazı diyabet hastalarının standart ayakkabılarla yetinmesi mümkün olmayabilir. Özellikle:
+
+- Ayak deformitesi olanlar
+- Daha önce ayak yarası geçmişi bulunanlar
+- İleri düzey nöropatisi olanlar
+- Charcot ayağı tanısı alanlar
+
+Bu durumda kişiye özel kalıplanmış ortopedik ayakkabılar veya tabanlıklar gerekebilir. Bunları podolog veya ortopedist önerisiyle yaptırmak en doğrusudur. Profesyonel ayak değerlendirmesi için [Medipodo'nun ayak bakımı hizmetleri](https://medipodo.com/hizmet/ayak-bakimi) size yol gösterebilir.
+
+## Kaçınılması Gereken Ayakkabı Tipleri
+
+Diyabet hastalarının uzak durması gereken modeller:
+
+- **Sivri burunlu ayakkabılar** — Parmakları sıkıştırır
+- **Yüksek topuklu ayakkabılar** — Basınç dağılımını bozar
+- **Plastik terlikler ve parmak arası terlikler** — Koruma sağlamaz, sürtünme yapar
+- **Çok ince tabanlı ayakkabılar** — Ayağı dış etkilerden koruyamaz
+- **Lastikli slip-on modeller** — Ayarlanabilir olmadığı için destek yetersiz kalır
+- **İkinci el ayakkabılar** — Başkasının ayak formuna göre şekillenmiş olabilir
+
+## Mevsimlere Göre Ayakkabı Tercihi
+
+**Yaz aylarında:** Kapalı ama nefes alabilen modeller tercih edin. Sandalet giymek istiyorsanız topuğu ve parmak ucunu kapatan, destekli spor sandalet modellerini değerlendirin. Açık terliklerle uzun süre yürümekten kaçının.
+
+**Kış aylarında:** Ayakları soğuktan koruyan, ama terletmeyen botlar tercih edin. İçi astarlı, su geçirmez modeller idealdir. Kışın ayak cildi daha çok kurur — bu konuda [ayak çatlakları ve bakım önerileri](/blog/ayak-catlaklari-neden-olur) yazımız size faydalı olacaktır.
+
+## Ayakkabı Bakımı da Unutulmamalı
+
+Doğru ayakkabıyı seçmek kadar, onun bakımını yapmak da önemli:
+
+- Ayakkabıları sırayla giyin, her gün aynı çifti kullanmayın
+- İç tabanı düzenli kontrol edin, yıpranmışsa değiştirin
+- Islanan ayakkabıyı doğal yollarla kurutun (direkt ısı kaynağına koymayın)
+- 6-12 ayda bir ayakkabılarınızı yenilemeyi düşünün
+
+## Sıkça Sorulan Sorular (SSS)
+
+**Diyabet hastası normal spor ayakkabı giyebilir mi?**
+Geniş burunlu, düz tabanlı ve nefes alabilen malzemeden yapılmış spor ayakkabılar genellikle uygundur. Ancak çok dar, sert veya desteksiz modeller uygun değildir. Şüphe durumunda podologunuza danışın.
+
+**Diyabetik ayakkabılar çirkin mi olur?**
+Eskiden öyleydi ama günümüzde şık ve modern görünümlü diyabetik ayakkabı modelleri mevcut. Pek çok marka diyabete uygun tasarımlar üretiyor.
+
+**Evde terlik giymek gerekli mi?**
+Evet, kesinlikle. Çıplak ayakla yürümek küçük yaralanma riskini artırır. Kapalı, yumuşak tabanlı, kaymaz ev terliği tercih edin.
+
+**Yeni ayakkabıyı hemen tüm gün giyebilir miyim?**
+Hayır. Yeni ayakkabıyı ilk günlerde 1-2 saatle sınırlayın. Her çıkardığınızda ayaklarınızı kontrol edin. Kızarıklık veya basınç izi görürseniz o ayakkabıyla devam etmeyin.
+
+**Ortopedik tabanlık her diyabet hastasına gerekli mi?**
+Hayır, her hastaya gerekli değildir. Ama ayak deformitesi, tekrarlayan nasır veya yara öyküsü olanlarda podolog önerisiyle kullanılması yararlı olabilir.
+
+## Sonuç
+
+Diyabet hastalarında ayakkabı seçimi, "konforlu olan iyidir" gibi basit bir konu değildir. Doğru ayakkabı, ayak sağlığını korumanın temel taşlarından biridir. Geniş burunlu, alçak topuklu, nefes alabilen, dikişsiz iç yapıya sahip ayakkabıları tercih etmek; her gün giymeden önce ayakkabının içini kontrol etmek ve ayakları düzenli olarak incelemek — bu üç basit alışkanlık bile büyük fark yaratır.
+
+Günlük ayak bakımı ve kontrol rutini oluşturmak için [ayak sağlığı için günlük rutin rehberimizi](/blog/ayak-sagligi-icin-gunluk-rutin) inceleyebilir, değişimleri takip etmek için AyakTakip uygulamasını kullanabilirsiniz.
+
+---
+
+*Bu içerik bilgilendirme amaçlıdır ve tıbbi teşhis veya tedavi yerine geçmez. Ayak sağlığınızla ilgili sorularınız için podolog veya ilgili sağlık profesyoneline danışın.*`
+  },
+  {
+    slug: "ayak-uyusmasi-ve-karincalanma-diyabet",
+    title: "Diyabette Ayak Uyuşması ve Karıncalanma: Ne Zaman Ciddiye Alınmalı?",
+    excerpt: "Ayaklardaki uyuşma ve karıncalanma diyabetin önemli bir sinyali olabilir. Belirtileri, nedenlerini ve ne zaman harekete geçmeniz gerektiğini anlatıyoruz.",
+    image: "/images/blog/ayak-uyusmasi-diyabet.webp",
+    imageAlt: "Diyabette ayak uyuşması karıncalanma ve ayak tabanında ağrı",
+    date: "5 Nisan 2026",
+    readTime: "11 dk",
+    content: `Gecenin bir yarısı ayağınızdaki garip bir karıncalanmayla uyandınız. Ya da bir süredir ayak tabanında tuhaf bir uyuşukluk var ama "geçer" diye düşünüyorsunuz. Eğer diyabet hastasıysanız veya risk grubundaysanız, bu belirtileri hafife almamak gerekiyor.
+
+Bu yazıda diyabette ayak uyuşması ve karıncalanmanın neden olduğunu, hangi belirtilerin ciddi olduğunu ve ne zaman harekete geçmeniz gerektiğini sade bir dille anlatacağım.
+
+## Diyabet Ayaklardaki Sinirleri Nasıl Etkiler?
+
+Kan şekeri uzun süre yüksek seyrettiğinde, vücuttaki ince sinir lifleri zarar görmeye başlar. Buna tıpta "periferik nöropati" deniyor. En çok da ayaklar etkilenir çünkü vücuttaki en uzun sinirler ayaklara gider — yani hasara en açık olanlar onlar.
+
+Sinir hasarı bir anda olmaz. Yavaş yavaş, fark ettirmeden ilerler. Çoğu hasta "bir süre önce başlamıştı ama önemsememiştim" der. İşte tam da bu yüzden düzenli takip çok kritik. Diyabetik ayak kavramını ve genel riskleri anlamak için [diyabetik ayak nedir ve nasıl oluşur](/blog/diyabetik-ayak-nedir) yazımız iyi bir başlangıç noktası olacaktır.
+
+## Uyuşma ve Karıncalanma Belirtileri
+
+Her uyuşma aynı değildir. Diyabetik nöropatinin tipik belirtileri şunlardır:
+
+**Çorap hissi:** Ayaklarınızda sanki kalın bir çorap varmış gibi hissedersiniz. Yere bastığınızda zemin tam olarak hissedilmez. Bu en yaygın şikayetlerden biridir.
+
+**Karıncalanma ve iğnelenme:** Özellikle geceleri yoğunlaşan, ayak tabanında veya parmaklarda hissedilen bir karıncalanma. "İğne batıyor gibi" diye tarif edenler çoktur.
+
+**Yanma hissi:** Ayak tabanlarında nedensiz bir yanma — oturduğunuzda veya yattığınızda belirginleşir. Bu belirtinin detaylı açıklaması için [ayakta yanma hissi neden olur](https://medipodo.com/blog/ayakta-yanma-hissi-neden-olur) yazısı faydalı olabilir.
+
+**Sıcak-soğuk algısının bozulması:** Sıcak suyu fark edememe, soğuk zemini hissedememe. Bu tehlikeli bir durumdur çünkü yanık veya donma riski artar.
+
+**Dokunma duyusunun azalması:** Ayağınıza batan bir cismi hissetmeme, çorabın kıvrımını fark etmeme. Küçük yaralanmalar böylece göz ardı edilebilir.
+
+**Denge bozukluğu:** Ayaklardan gelen his azaldığında, beyin zemin hakkında yeterli geri bildirim alamaz. Bu da yürürken dengesizliğe ve düşme riskine yol açabilir.
+
+## Her Uyuşma Diyabetten mi Kaynaklanır?
+
+Hayır. Ayak uyuşmasının pek çok farklı nedeni olabilir:
+
+- **Uzun süre aynı pozisyonda oturmak** — Bacak bacak üstüne atıp kalan herkes bu uyuşmayı bilir. Pozisyon değiştirince geçer.
+- **Dar ayakkabı** — Sıkışan sinir geçici uyuşma yapabilir.
+- **B12 vitamini eksikliği** — Sinir sağlığı için kritik bir vitamin.
+- **Bel fıtığı** — Belden ayağa giden sinirin baskı altında kalması.
+- **Dolaşım bozukluğu** — Yeterli kan gitmediğinde de uyuşma olabilir.
+
+Ancak şunu bilmekte fayda var: diyabet hastasıysanız ve uyuşma birkaç günden fazla sürüyorsa, sebebi ne olursa olsun mutlaka değerlendirilmelidir.
+
+## Ne Zaman Ciddiye Almalı? İşaretler
+
+Aşağıdaki durumlardan herhangi birinde vakit kaybetmeden sağlık profesyoneline başvurun:
+
+- Uyuşma her iki ayakta da simetrik şekilde varsa ve giderek yayılıyorsa
+- Geceleri uykunuzu bozacak düzeyde karıncalanma veya yanma oluyorsa
+- Ayağınızda bir yara oluştuysa ama siz onu hissetmediyseniz
+- Sıcak-soğuk algınız belirgin şekilde azaldıysa
+- Yürürken denge sorunu yaşamaya başladıysanız
+- Uyuşmanın yanı sıra ayak renginde değişiklik de varsa
+
+Ayaklarınızdaki renk ve yapı değişikliklerinin ne anlama geldiğini öğrenmek için [ayakta değişimler ne zaman önemsenmeli](/blog/ayakta-degisimler-ne-zaman-onemsenmeli) yazımızı inceleyebilirsiniz.
+
+## Nöropati Riskini Azaltmak İçin Yapılabilecekler
+
+Diyabetik nöropatiyi tamamen önlemek her zaman mümkün olmasa da, riskini azaltmak ve ilerlemesini yavaşlatmak elinizde:
+
+**Kan şekerini düzenli tutun.** Bu en etkili yöntemdir. HbA1c değerinizi hedef aralıkta tutmak, sinir hasarının ilerlemesini yavaşlatır.
+
+**Düzenli hareket edin.** Yürüyüş, yüzme veya bisiklet gibi aktiviteler hem kan şekerini düzenlemeye hem de ayaklardaki dolaşımı artırmaya yardımcı olur.
+
+**Sigara bırakın.** Sigara damarları daraltır ve zaten bozulmuş olan dolaşımı daha da kötüleştirir. Diyabet + sigara kombinasyonu ayak sağlığı için ciddi risk oluşturur.
+
+**Alkol tüketimini azaltın.** Aşırı alkol tüketimi sinir hasarını hızlandırabilir.
+
+**Ayaklarınızı her gün kontrol edin.** Uyuşma olduğunda yaraları hissedemezsiniz. O yüzden her gün gözle kontrol yapmak hayati önem taşır. Günlük kontrol rutini oluşturmak için [ayak sağlığı için sabahtan akşama rehberimiz](/blog/ayak-sagligi-icin-gunluk-rutin) size pratik bir yol haritası sunuyor.
+
+**Ayaklarınızı koruyan ayakkabılar giyin.** Uyuşmuş bir ayakta dar ayakkabının verdiği hasar hissedilmez. Doğru ayakkabı seçimi hakkında [diyabetik ayak için ayakkabı seçim rehberimizi](/blog/diyabetik-ayak-icin-dogru-ayakkabi-secimi) okuyabilirsiniz.
+
+## Nöropati Varsa Günlük Hayatta Nelere Dikkat Etmeli?
+
+Eğer nöropati tanısı aldıysanız veya belirtiler başladıysa, günlük yaşamda bazı alışkanlıkları değiştirmeniz gerekir:
+
+- **Çıplak ayakla asla yürümeyin** — ev içinde bile terlik giyin
+- **Banyo suyunu dirseğinizle test edin** — ayaklarınızla sıcaklığı doğru ölçemezsiniz
+- **Soba, kalorifer veya sıcak su torbası ile ayakları ısıtmayın** — yanık riski çok yüksek
+- **Her gün fotoğraf çekerek ayaklarınızı takip edin** — [fotoğraf ile ayak takibi](/blog/ayak-fotografi-ile-takip) yazımız bu konuda size yol gösterecektir
+- **Tırnakları kendiniz kesmekte zorlanıyorsanız profesyonel destek alın** — yanlış kesim batık tırnak ve yaraya neden olabilir
+- **Düzenli podolog kontrolüne gidin** — profesyonel ayak bakımı bu süreçte çok değerlidir. [Medipodo'nun diyabet ve ayak sağlığı hakkındaki yazısı](https://medipodo.com/blog/diyabet-ve-ayak-sagligi) ek bilgi sunuyor.
+
+## Tedavide Neler Yapılıyor?
+
+Diyabetik nöropatinin tedavisi, hasarın geri döndürülmesinden çok ilerlemenin yavaşlatılmasına ve belirtilerin hafifletilmesine odaklanır:
+
+- **Kan şekeri kontrolü** — temel tedavi budur
+- **Ağrı ve karıncalanma için ilaçlar** — doktorunuz uygun gördüğü ilaçları önerebilir
+- **Fizik tedavi** — denge ve yürüyüş eğitimi, güçlendirme egzersizleri
+- **Ayak bakımı ve koruması** — doğru ayakkabı, ortopedik tabanlık, düzenli bakım
+- **Yaşam tarzı değişiklikleri** — beslenme, egzersiz, sigara bırakma
+
+## Sıkça Sorulan Sorular (SSS)
+
+**Diyabetik nöropati geri döner mi?**
+Erken evrede kan şekeri kontrolü sağlanırsa belirtiler hafifleyebilir. Ancak ileri sinir hasarı genellikle kalıcıdır. Bu yüzden erken fark etmek çok önemlidir.
+
+**Ayak uyuşması her zaman diyabet belirtisi mi?**
+Hayır. B12 eksikliği, bel fıtığı, dolaşım bozuklukları gibi pek çok neden olabilir. Ancak diyabet hastasıysanız, bu belirtileri mutlaka doktorunuza bildirin.
+
+**Karıncalanma sadece geceleri olması normal mi?**
+Nöropatide belirtiler genellikle dinlenirken — özellikle gece yatakta — daha belirgin hissedilir. Bunun nedeni gün içindeki dikkat dağıtıcıların olmamasıdır. Ama "sadece gece oluyor" diye önemsememek yanlıştır.
+
+**Nöropati olan biri yürüyüş yapabilir mi?**
+Evet, hatta önerilir. Düzenli yürüyüş dolaşımı destekler ve kan şekerini düzenlemeye yardımcı olur. Ancak doğru ayakkabıyla ve düz zeminlerde yapılmalıdır. Denge sorunu varsa dikkatli olunmalı.
+
+**Ayaklarımı nasıl kontrol edebilirim?**
+Her gün aynı saatte, iyi aydınlatılmış bir ortamda bakın. Ayak tabanı için ayna kullanın. Kızarıklık, yara, şişlik, renk değişikliği arayın. AyakTakip uygulamasıyla fotoğraf çekerek karşılaştırma yapabilirsiniz.
+
+**Podolog kontrolü ne sıklıkla yapılmalı?**
+Nöropati belirtileri olan diyabet hastaları için 3-6 ayda bir profesyonel ayak kontrolü önerilir. Podolog; nasır, tırnak bakımı ve basınç noktalarını değerlendirerek olası sorunları önlemeye yardımcı olur.
+
+## Sonuç
+
+Ayaklardaki uyuşma ve karıncalanma, diyabetin sessiz ama önemli bir sinyalidir. "Geçer" diye ertelemek yerine, belirtileri ciddiye almak ve sağlık profesyoneline danışmak en doğrusudur. Erken fark etmek, düzenli takip ve doğru bakım alışkanlıkları — bu üçlü, diyabetik nöropatinin etkilerini en aza indirmenin anahtarıdır.
+
+Günlük ayak kontrolünü alışkanlık haline getirin. Değişimleri fotoğrafla kaydedin. Ayakkabılarınıza dikkat edin. Ve en önemlisi: kan şekerinizi düzenli tutun.
+
+AyakTakip uygulaması ile ayak sağlığınızı düzenli olarak izleyebilir, değişimleri kaydedebilir ve raporlar oluşturabilirsiniz.
+
+---
+
+*Bu içerik bilgilendirme amaçlıdır ve tıbbi teşhis veya tedavi yerine geçmez. Nöropati belirtileri için mutlaka endokrinoloji veya nöroloji uzmanına, ayak bakımı için podologa başvurun.*`
+  },
+  {
     slug: "diyabetik-ayak-nedir",
     title: "Diyabetik Ayak Nedir? Belirtileri, Riskleri ve Korunma Yolları",
     excerpt: "Diyabetik ayak, diyabet hastalarının en çok karşılaştığı komplikasyonlardan biridir. Düzenli takip ve erken fark etme önemlidir.",
