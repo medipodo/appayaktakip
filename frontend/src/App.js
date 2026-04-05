@@ -451,6 +451,53 @@ const BlogPostPage = () => {
   const { slug } = useParams();
   const post = blogPosts.find(p => p.slug === slug);
   
+  // Dynamic title, meta & FAQ schema - must be before any conditional return
+  useEffect(() => {
+    if (!post) return;
+    
+    document.title = `${post.title} | AyakTakip`;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', post.excerpt);
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', post.title);
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute('content', post.excerpt);
+    const ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogImage) ogImage.setAttribute('content', `https://ayaktakip.com${post.image}`);
+    const twTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twTitle) twTitle.setAttribute('content', post.title);
+    const twDesc = document.querySelector('meta[name="twitter:description"]');
+    if (twDesc) twDesc.setAttribute('content', post.excerpt);
+    const twImage = document.querySelector('meta[name="twitter:image"]');
+    if (twImage) twImage.setAttribute('content', `https://ayaktakip.com${post.image}`);
+
+    if (!post.faq || post.faq.length === 0) return;
+    
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": post.faq.map(item => ({
+        "@type": "Question",
+        "name": item.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.a
+        }
+      }))
+    };
+    
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = 'faq-schema';
+    script.textContent = JSON.stringify(schema);
+    document.head.appendChild(script);
+    
+    return () => {
+      const existing = document.getElementById('faq-schema');
+      if (existing) existing.remove();
+    };
+  }, [post]);
+
   if (!post) {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
@@ -596,53 +643,6 @@ const BlogPostPage = () => {
       );
     });
   };
-  
-  // Inject FAQ JSON-LD schema into <head> for Google rich snippets
-  useEffect(() => {
-    // Dynamic title & meta description
-    document.title = `${post.title} | AyakTakip`;
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', post.excerpt);
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) ogTitle.setAttribute('content', post.title);
-    const ogDesc = document.querySelector('meta[property="og:description"]');
-    if (ogDesc) ogDesc.setAttribute('content', post.excerpt);
-    const ogImage = document.querySelector('meta[property="og:image"]');
-    if (ogImage) ogImage.setAttribute('content', `https://ayaktakip.com${post.image}`);
-    const twTitle = document.querySelector('meta[name="twitter:title"]');
-    if (twTitle) twTitle.setAttribute('content', post.title);
-    const twDesc = document.querySelector('meta[name="twitter:description"]');
-    if (twDesc) twDesc.setAttribute('content', post.excerpt);
-    const twImage = document.querySelector('meta[name="twitter:image"]');
-    if (twImage) twImage.setAttribute('content', `https://ayaktakip.com${post.image}`);
-
-    // FAQ schema
-    if (!post.faq || post.faq.length === 0) return;
-    
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": post.faq.map(item => ({
-        "@type": "Question",
-        "name": item.q,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": item.a
-        }
-      }))
-    };
-    
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.id = 'faq-schema';
-    script.textContent = JSON.stringify(schema);
-    document.head.appendChild(script);
-    
-    return () => {
-      const existing = document.getElementById('faq-schema');
-      if (existing) existing.remove();
-    };
-  }, [post]);
 
   return (
     <div className="min-h-screen bg-white">
