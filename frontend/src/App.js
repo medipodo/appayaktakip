@@ -599,6 +599,24 @@ const BlogPostPage = () => {
   
   // Inject FAQ JSON-LD schema into <head> for Google rich snippets
   useEffect(() => {
+    // Dynamic title & meta description
+    document.title = `${post.title} | AyakTakip`;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', post.excerpt);
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', post.title);
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.setAttribute('content', post.excerpt);
+    const ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogImage) ogImage.setAttribute('content', `https://ayaktakip.com${post.image}`);
+    const twTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twTitle) twTitle.setAttribute('content', post.title);
+    const twDesc = document.querySelector('meta[name="twitter:description"]');
+    if (twDesc) twDesc.setAttribute('content', post.excerpt);
+    const twImage = document.querySelector('meta[name="twitter:image"]');
+    if (twImage) twImage.setAttribute('content', `https://ayaktakip.com${post.image}`);
+
+    // FAQ schema
     if (!post.faq || post.faq.length === 0) return;
     
     const schema = {
