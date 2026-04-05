@@ -1,8 +1,8 @@
 import "@/App.css";
-import { Calendar, Heart, Camera, FileText, Apple, Star, ChevronRight, CheckCircle, Clock, ArrowLeft, Phone, Mail, MessageCircle, ExternalLink } from "lucide-react";
+import { Calendar, Heart, Camera, FileText, Apple, Star, ChevronRight, ChevronDown, CheckCircle, Clock, ArrowLeft, Phone, Mail, MessageCircle, ExternalLink } from "lucide-react";
 import { BrowserRouter as Router, Routes, Route, Link, useParams, useLocation } from "react-router-dom";
 import { blogPosts } from "./data/blogPosts";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -465,6 +465,73 @@ const BlogPostPage = () => {
     );
   }
 
+  // Parse markdown links in text to clickable <a> tags
+  const parseLinks = (text) => {
+    const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+    const parts = [];
+    let lastIndex = 0;
+    let match;
+    
+    while ((match = linkRegex.exec(text)) !== null) {
+      if (match.index > lastIndex) {
+        parts.push(text.slice(lastIndex, match.index));
+      }
+      const [, linkText, url] = match;
+      const isExternal = url.startsWith('http');
+      parts.push(
+        <a
+          key={match.index}
+          href={url}
+          {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+          className="text-[#2563EB] underline underline-offset-2 hover:text-[#1D4ED8] transition-colors"
+        >
+          {linkText}
+          {isExternal && <ExternalLink className="inline w-3 h-3 ml-1 -mt-0.5" />}
+        </a>
+      );
+      lastIndex = match.index + match[0].length;
+    }
+    
+    if (lastIndex < text.length) {
+      parts.push(text.slice(lastIndex));
+    }
+    
+    return parts.length > 0 ? parts : text;
+  };
+
+  // FAQ Accordion Component
+  const FaqSection = ({ items }) => {
+    const [openIndex, setOpenIndex] = useState(null);
+    
+    return (
+      <div className="my-10" data-testid="faq-section">
+        <h2 className="text-xl font-bold text-[#1D3A5F] mb-6 pb-2 border-b border-[#E2E8F0]">
+          Sıkça Sorulan Sorular
+        </h2>
+        <div className="space-y-2">
+          {items.map((item, i) => (
+            <div key={i} className="border border-[#E2E8F0] rounded-xl overflow-hidden" data-testid={`faq-item-${i}`}>
+              <button
+                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                className="w-full flex items-center justify-between p-4 text-left hover:bg-[#F8FAFC] transition-colors"
+              >
+                <span className="font-medium text-[#1D3A5F] pr-4">{item.q}</span>
+                <ChevronDown 
+                  className={`w-5 h-5 text-[#94A3B8] flex-shrink-0 transition-transform duration-200 ${openIndex === i ? 'rotate-180' : ''}`} 
+                />
+              </button>
+              <div 
+                className={`overflow-hidden transition-all duration-200 ${openIndex === i ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+              >
+                <p className="px-4 pb-4 text-[#4A5568] leading-relaxed">{item.a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  };
+
   // Parse content with better formatting
   const renderContent = (content) => {
     const sections = content.split('\n\n');
@@ -478,27 +545,6 @@ const BlogPostPage = () => {
         );
       }
       
-      // Bold text paragraphs
-      if (section.startsWith('**') && section.includes(':**')) {
-        const parts = section.split('\n');
-        return (
-          <div key={idx} className="my-4">
-            {parts.map((part, i) => {
-              if (part.startsWith('**')) {
-                const [title, ...rest] = part.split(':**');
-                return (
-                  <p key={i} className="text-[#4A5568] leading-relaxed mb-2">
-                    <strong className="text-[#1D3A5F]">{title.replace('**', '')}:</strong>
-                    {rest.join(':**')}
-                  </p>
-                );
-              }
-              return <p key={i} className="text-[#4A5568] leading-relaxed mb-2">{part}</p>;
-            })}
-          </div>
-        );
-      }
-      
       // Unordered lists
       if (section.startsWith('- ')) {
         const items = section.split('\n').filter(line => line.startsWith('- '));
@@ -507,7 +553,7 @@ const BlogPostPage = () => {
             {items.map((item, i) => (
               <li key={i} className="flex items-start gap-3 text-[#4A5568]">
                 <CheckCircle className="w-5 h-5 text-[#10B981] flex-shrink-0 mt-0.5" />
-                <span>{item.replace('- ', '')}</span>
+                <span>{parseLinks(item.replace('- ', ''))}</span>
               </li>
             ))}
           </ul>
@@ -524,7 +570,7 @@ const BlogPostPage = () => {
                 <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#2563EB] text-white text-sm flex items-center justify-center">
                   {i + 1}
                 </span>
-                <span>{item.replace(/^\d\. /, '')}</span>
+                <span>{parseLinks(item.replace(/^\d\. /, ''))}</span>
               </li>
             ))}
           </ol>
@@ -545,10 +591,10 @@ const BlogPostPage = () => {
         );
       }
       
-      // Regular paragraphs
+      // Regular paragraphs with link support
       return (
         <p key={idx} className="text-[#4A5568] leading-relaxed my-4 text-lg">
-          {section}
+          {parseLinks(section)}
         </p>
       );
     });
@@ -593,6 +639,7 @@ const BlogPostPage = () => {
       <div className="container-custom py-12">
         <article className="max-w-3xl mx-auto">
           {renderContent(post.content)}
+          {post.faq && post.faq.length > 0 && <FaqSection items={post.faq} />}
         </article>
         
         {/* CTA */}

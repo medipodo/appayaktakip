@@ -8,6 +8,13 @@ export const blogPosts = [
     imageAlt: "Diyabet hastaları için uygun ayakkabı seçimi ve kan şekeri ölçüm cihazı",
     date: "5 Nisan 2026",
     readTime: "10 dk",
+    faq: [
+      { q: "Diyabet hastası normal spor ayakkabı giyebilir mi?", a: "Geniş burunlu, düz tabanlı ve nefes alabilen malzemeden yapılmış spor ayakkabılar genellikle uygundur. Ancak çok dar, sert veya desteksiz modeller uygun değildir. Şüphe durumunda podologunuza danışın." },
+      { q: "Diyabetik ayakkabılar çirkin mi olur?", a: "Eskiden öyleydi ama günümüzde şık ve modern görünümlü diyabetik ayakkabı modelleri mevcut. Pek çok marka diyabete uygun tasarımlar üretiyor." },
+      { q: "Evde terlik giymek gerekli mi?", a: "Evet, kesinlikle. Çıplak ayakla yürümek küçük yaralanma riskini artırır. Kapalı, yumuşak tabanlı, kaymaz ev terliği tercih edin." },
+      { q: "Yeni ayakkabıyı hemen tüm gün giyebilir miyim?", a: "Hayır. Yeni ayakkabıyı ilk günlerde 1-2 saatle sınırlayın. Her çıkardığınızda ayaklarınızı kontrol edin. Kızarıklık veya basınç izi görürseniz o ayakkabıyla devam etmeyin." },
+      { q: "Ortopedik tabanlık her diyabet hastasına gerekli mi?", a: "Hayır, her hastaya gerekli değildir. Ama ayak deformitesi, tekrarlayan nasır veya yara öyküsü olanlarda podolog önerisiyle kullanılması yararlı olabilir." }
+    ],
     content: `Diyabet hastası bir yakınım var, yıllardır ayak bakımına dikkat eder ama bir gün dar bir ayakkabı yüzünden başparmağında yara oluştu. Fark etmesi bile günler sürdü — çünkü hissedememişti. Sonradan öğrendik ki diyabette ayakkabı seçimi, çoğu insanın düşündüğünden çok daha kritik bir konu.
 
 Bu yazıda diyabet hastalarının ayakkabı seçerken bilmesi gerekenleri, hangi modellerin uygun olduğunu ve nelere dikkat edilmesi gerektiğini paylaşıyorum.
@@ -85,23 +92,6 @@ Doğru ayakkabıyı seçmek kadar, onun bakımını yapmak da önemli:
 - Islanan ayakkabıyı doğal yollarla kurutun (direkt ısı kaynağına koymayın)
 - 6-12 ayda bir ayakkabılarınızı yenilemeyi düşünün
 
-## Sıkça Sorulan Sorular (SSS)
-
-Diyabet hastası normal spor ayakkabı giyebilir mi?
-Geniş burunlu, düz tabanlı ve nefes alabilen malzemeden yapılmış spor ayakkabılar genellikle uygundur. Ancak çok dar, sert veya desteksiz modeller uygun değildir. Şüphe durumunda podologunuza danışın.
-
-Diyabetik ayakkabılar çirkin mi olur?
-Eskiden öyleydi ama günümüzde şık ve modern görünümlü diyabetik ayakkabı modelleri mevcut. Pek çok marka diyabete uygun tasarımlar üretiyor.
-
-Evde terlik giymek gerekli mi?
-Evet, kesinlikle. Çıplak ayakla yürümek küçük yaralanma riskini artırır. Kapalı, yumuşak tabanlı, kaymaz ev terliği tercih edin.
-
-Yeni ayakkabıyı hemen tüm gün giyebilir miyim?
-Hayır. Yeni ayakkabıyı ilk günlerde 1-2 saatle sınırlayın. Her çıkardığınızda ayaklarınızı kontrol edin. Kızarıklık veya basınç izi görürseniz o ayakkabıyla devam etmeyin.
-
-Ortopedik tabanlık her diyabet hastasına gerekli mi?
-Hayır, her hastaya gerekli değildir. Ama ayak deformitesi, tekrarlayan nasır veya yara öyküsü olanlarda podolog önerisiyle kullanılması yararlı olabilir.
-
 ## Sonuç
 
 Diyabet hastalarında ayakkabı seçimi, "konforlu olan iyidir" gibi basit bir konu değildir. Doğru ayakkabı, ayak sağlığını korumanın temel taşlarından biridir. Geniş burunlu, alçak topuklu, nefes alabilen, dikişsiz iç yapıya sahip ayakkabıları tercih etmek; her gün giymeden önce ayakkabının içini kontrol etmek ve ayakları düzenli olarak incelemek — bu üç basit alışkanlık bile büyük fark yaratır.
@@ -120,6 +110,14 @@ Günlük ayak bakımı ve kontrol rutini oluşturmak için [ayak sağlığı iç
     imageAlt: "Diyabette ayak uyuşması karıncalanma ve ayak tabanında ağrı",
     date: "5 Nisan 2026",
     readTime: "11 dk",
+    faq: [
+      { q: "Diyabetik nöropati geri döner mi?", a: "Erken evrede kan şekeri kontrolü sağlanırsa belirtiler hafifleyebilir. Ancak ileri sinir hasarı genellikle kalıcıdır. Bu yüzden erken fark etmek çok önemlidir." },
+      { q: "Ayak uyuşması her zaman diyabet belirtisi mi?", a: "Hayır. B12 eksikliği, bel fıtığı, dolaşım bozuklukları gibi pek çok neden olabilir. Ancak diyabet hastasıysanız, bu belirtileri mutlaka doktorunuza bildirin." },
+      { q: "Karıncalanma sadece geceleri olması normal mi?", a: "Nöropatide belirtiler genellikle dinlenirken — özellikle gece yatakta — daha belirgin hissedilir. Bunun nedeni gün içindeki dikkat dağıtıcıların olmamasıdır. Ama sadece gece oluyor diye önemsememek yanlıştır." },
+      { q: "Nöropati olan biri yürüyüş yapabilir mi?", a: "Evet, hatta önerilir. Düzenli yürüyüş dolaşımı destekler ve kan şekerini düzenlemeye yardımcı olur. Ancak doğru ayakkabıyla ve düz zeminlerde yapılmalıdır. Denge sorunu varsa dikkatli olunmalı." },
+      { q: "Ayaklarımı nasıl kontrol edebilirim?", a: "Her gün aynı saatte, iyi aydınlatılmış bir ortamda bakın. Ayak tabanı için ayna kullanın. Kızarıklık, yara, şişlik, renk değişikliği arayın. AyakTakip uygulamasıyla fotoğraf çekerek karşılaştırma yapabilirsiniz." },
+      { q: "Podolog kontrolü ne sıklıkla yapılmalı?", a: "Nöropati belirtileri olan diyabet hastaları için 3-6 ayda bir profesyonel ayak kontrolü önerilir. Podolog; nasır, tırnak bakımı ve basınç noktalarını değerlendirerek olası sorunları önlemeye yardımcı olur." }
+    ],
     content: `Gecenin bir yarısı ayağınızdaki garip bir karıncalanmayla uyandınız. Ya da bir süredir ayak tabanında tuhaf bir uyuşukluk var ama "geçer" diye düşünüyorsunuz. Eğer diyabet hastasıysanız veya risk grubundaysanız, bu belirtileri hafife almamak gerekiyor.
 
 Bu yazıda diyabette ayak uyuşması ve karıncalanmanın neden olduğunu, hangi belirtilerin ciddi olduğunu ve ne zaman harekete geçmeniz gerektiğini sade bir dille anlatacağım.
@@ -207,26 +205,6 @@ Diyabetik nöropatinin tedavisi, hasarın geri döndürülmesinden çok ilerleme
 - Fizik tedavi — denge ve yürüyüş eğitimi, güçlendirme egzersizleri
 - Ayak bakımı ve koruması — doğru ayakkabı, ortopedik tabanlık, düzenli bakım
 - Yaşam tarzı değişiklikleri — beslenme, egzersiz, sigara bırakma
-
-## Sıkça Sorulan Sorular (SSS)
-
-Diyabetik nöropati geri döner mi?
-Erken evrede kan şekeri kontrolü sağlanırsa belirtiler hafifleyebilir. Ancak ileri sinir hasarı genellikle kalıcıdır. Bu yüzden erken fark etmek çok önemlidir.
-
-Ayak uyuşması her zaman diyabet belirtisi mi?
-Hayır. B12 eksikliği, bel fıtığı, dolaşım bozuklukları gibi pek çok neden olabilir. Ancak diyabet hastasıysanız, bu belirtileri mutlaka doktorunuza bildirin.
-
-Karıncalanma sadece geceleri olması normal mi?
-Nöropatide belirtiler genellikle dinlenirken — özellikle gece yatakta — daha belirgin hissedilir. Bunun nedeni gün içindeki dikkat dağıtıcıların olmamasıdır. Ama "sadece gece oluyor" diye önemsememek yanlıştır.
-
-Nöropati olan biri yürüyüş yapabilir mi?
-Evet, hatta önerilir. Düzenli yürüyüş dolaşımı destekler ve kan şekerini düzenlemeye yardımcı olur. Ancak doğru ayakkabıyla ve düz zeminlerde yapılmalıdır. Denge sorunu varsa dikkatli olunmalı.
-
-Ayaklarımı nasıl kontrol edebilirim?
-Her gün aynı saatte, iyi aydınlatılmış bir ortamda bakın. Ayak tabanı için ayna kullanın. Kızarıklık, yara, şişlik, renk değişikliği arayın. AyakTakip uygulamasıyla fotoğraf çekerek karşılaştırma yapabilirsiniz.
-
-Podolog kontrolü ne sıklıkla yapılmalı?
-Nöropati belirtileri olan diyabet hastaları için 3-6 ayda bir profesyonel ayak kontrolü önerilir. Podolog; nasır, tırnak bakımı ve basınç noktalarını değerlendirerek olası sorunları önlemeye yardımcı olur.
 
 ## Sonuç
 
