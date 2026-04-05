@@ -1,0 +1,8 @@
+# AyakTakip - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://ayaktakip.com/sitemap.xml
+
+# Disallow admin/private paths (none currently)

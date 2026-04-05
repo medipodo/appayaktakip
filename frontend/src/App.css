@@ -1,0 +1,257 @@
+/* AyakTakip Landing Page - Blue Theme */
+
+/* Hide Emergent watermark - Force hide all variations */
+[data-testid="emergent-watermark"],
+.emergent-watermark,
+div[class*="emergent"],
+a[href*="emergent"],
+div[style*="Made with"],
+button[class*="emergent"],
+div[class*="Emergent"],
+*[class*="watermark"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+/* Wave background for hero - Vibrant Blue theme matching logo */
+.hero-wave-bg {
+  background: linear-gradient(135deg, #DBEAFE 0%, #93C5FD 40%, #60A5FA 70%, #3B82F6 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-wave-bg::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,160L48,170.7C96,181,192,203,288,197.3C384,192,480,160,576,154.7C672,149,768,171,864,181.3C960,192,1056,192,1152,176C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") no-repeat bottom;
+  background-size: cover;
+}
+
+/* Wave decoration */
+.wave-decoration {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 60%;
+  height: 80%;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.25' d='M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,218.7C672,203,768,149,864,138.7C960,128,1056,160,1152,170.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  background-size: cover;
+  pointer-events: none;
+}
+
+/* Store button styles */
+.store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.store-btn-dark {
+  background: #1a1a1a;
+  color: white;
+}
+
+.store-btn-dark:hover {
+  background: #333;
+  transform: scale(1.02);
+}
+
+.store-btn-light {
+  background: white;
+  color: #1a1a1a;
+  border: 1px solid #e0e0e0;
+}
+
+.store-btn-light:hover {
+  background: #f5f5f5;
+  transform: scale(1.02);
+}
+
+/* Feature card */
+.feature-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon-box {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.feature-icon-box.calendar {
+  background: #E3F2FD;
+}
+
+.feature-icon-box.diabetic {
+  background: #E8F5E9;
+}
+
+.feature-icon-box.camera {
+  background: #E0F7FA;
+}
+
+.feature-icon-box.pdf {
+  background: #FFEBEE;
+}
+
+/* Step card for "Nasıl Çalışır" */
+.step-card {
+  text-align: center;
+  position: relative;
+}
+
+.step-number {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+}
+
+.step-phone-mockup {
+  background: linear-gradient(145deg, #3B82F6 0%, #2563EB 100%);
+  border-radius: 24px;
+  padding: 8px;
+  margin: 0 auto 16px;
+  max-width: 180px;
+  box-shadow: 0 10px 40px rgba(37, 99, 235, 0.35);
+}
+
+.step-phone-mockup img {
+  border-radius: 18px;
+  width: 100%;
+}
+
+/* CTA Section - Vibrant Blue theme */
+.cta-section {
+  background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%);
+  position: relative;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='1' d='M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,90.7C672,85,768,107,864,122.7C960,139,1056,149,1152,138.7C1248,128,1344,96,1392,80L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z'%3E%3C/path%3E%3C/svg%3E") no-repeat top;
+  background-size: cover;
+}
+
+/* Review card */
+.review-card {
+  transition: all 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Section spacing */
+.section-spacing {
+  padding: 80px 0;
+}
+
+@media (min-width: 768px) {
+  .section-spacing {
+    padding: 100px 0;
+  }
+}
+
+/* Container */
+.container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+  .container-custom {
+    padding: 0 48px;
+  }
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-delay-100 { animation-delay: 0.1s; }
+.animate-delay-200 { animation-delay: 0.2s; }
+.animate-delay-300 { animation-delay: 0.3s; }
+
+/* Phone mockup shadow */
+.phone-shadow {
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title gradient - Vibrant Blue matching logo */
+.title-gradient {
+  background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Disclaimer text */
+.disclaimer-text {
+  color: #64748B;
+  font-size: 13px;
+}
