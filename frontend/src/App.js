@@ -25,7 +25,7 @@ const APP_USAGE_IMAGE = "/images/app-usage.webp";
 
 // Links
 const APP_STORE_LINK = "https://apps.apple.com/tr/app/ayaktakip/id6759668374?l=tr";
-const GOOGLE_PLAY_LINK = "#";
+const GOOGLE_PLAY_LINK = "https://play.google.com/store/apps/details?id=com.pedizonee.ayaktakip2&hl=tr";
 const PRIVACY_LINK = "https://pedizone.com/privacy/";
 
 // Google Play Icon Component
