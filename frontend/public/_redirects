@@ -1,3 +1,3 @@
-/blog/ayak-yarasi-nasil-takip-edilir  /blog/diyabetik-ayak-nedir  301
-/blog/ayak-yarasi-nasil-takip-edilir/  /blog/diyabetik-ayak-nedir  301
+/blog/ayak-yarasi-nasil-takip-edilir,*  /blog/diyabetik-ayak-nedir  301
+/blog/ayak-yarasi-nasil-takip-edilir*   /blog/diyabetik-ayak-nedir  301
 /*    /index.html   200
